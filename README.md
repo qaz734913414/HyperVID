@@ -1,10 +1,11 @@
 # HyperVID
+支持1776中常见车辆品牌及子类型识别
+
 Vehicle Identification which supporting for 1776 kinds of models. 
 
 [Models Table](label.txt)
 
 ###### Data from Second-hand car trading service website.
-
 
 
 ### Demo on Android
