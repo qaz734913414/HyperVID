@@ -3,7 +3,7 @@ Vehicle Identification Support for 1776 kinds of models.
 
 [Models Table](label.txt)
 
-###### *Data from Second-hand car trading service website.
+###### Data from Second-hand car trading service website.
 
 
 
