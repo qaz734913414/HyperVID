@@ -1,5 +1,5 @@
 # HyperVID
-Vehicle Identification Support for 1776 kinds of models. 
+Vehicle Identification which supporting for 1776 kinds of models. 
 
 [Models Table](label.txt)
 
