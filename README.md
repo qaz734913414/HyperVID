@@ -13,9 +13,9 @@ Vehicle Type Identification which supporting for 1776 kinds of models. Part of D
 
 #### Demo Image on Android
 
-![Screenshot_2019-04-21-19-39-42-500_test.deploy.tv](demo_images/Screenshot_2019-04-21-19-39-42-500_test.deploy.tv.png)
+![demo](demo.png)
 
-![Screenshot_2019-04-21-19-39-55-200_test.deploy.tv](demo_images/Screenshot_2019-04-21-19-39-55-200_test.deploy.tv.png)
+
 
 
 #### Related Dataset
