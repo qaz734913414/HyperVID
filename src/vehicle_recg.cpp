@@ -49,14 +49,14 @@ std::pair<std::string,float> VEHICLE_RECG::detect(cv::Mat& img_)
 	cv::Rect rect;
 	det_net.setInput(blobFromImage(image, 1.0 / 127.5, Size(300, 300), Scalar(127.5, 127.5, 127.5), true, false));
 	Mat cvOut = det_net.forward();
-
+	int max_h = 0;
+	int max_w = 0;
 	Mat detectionMat(cvOut.size[2], cvOut.size[3], CV_32F, cvOut.ptr<float>());
 	for (int i = 0; i < detectionMat.rows; i++)
 	{
 		int obj_class = detectionMat.at<float>(i, 1);
 		float confidence = detectionMat.at<float>(i, 2);
-		int max_h = 0;
-		int max_w = 0;
+		
 		if (confidence > detect_thresh && obj_class == 7)
 		{
 			size_t objectClass = (size_t)(detectionMat.at<float>(i, 1));
