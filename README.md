@@ -13,6 +13,8 @@ Vehicle Type Identification which supporting for 1776 kinds of models. Part of D
 
 - 准确度高，TOP1 准确率超过85%
 
+- 非常适合停车场卡口，结合车牌识别一同部署
+
 
 #### 识别测试APP
 
