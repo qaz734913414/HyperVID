@@ -5,6 +5,14 @@ Vehicle Type Identification which supporting for 1776 kinds of models. Part of D
 
 [Models Table](label.txt)
 
+#### 特性
+
+- 速度快，基于mobilenet设计，更适合移动端部署
+
+- 种类丰富，能够支持1776中常见车型
+
+- 准确度高，TOP1 准确率超过85%
+
 
 #### 识别测试APP
 
@@ -15,7 +23,11 @@ Vehicle Type Identification which supporting for 1776 kinds of models. Part of D
 
 ![demo](demo.png)
 
+#### TODO
 
+- 丰富车型库
+
+- 进一步优化模型，提高速度，降低模型大小
 
 
 #### Related Dataset
