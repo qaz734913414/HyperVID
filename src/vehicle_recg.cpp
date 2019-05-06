@@ -108,7 +108,6 @@ std::pair<std::string,float> VEHICLE_RECG::detect(cv::Mat& img_)
 		auto blob = cv::dnn::blobFromImage(frame, 1.0, Size(frame.cols * (224.0 / frame.rows), 224),cv::Scalar(0.0,0.0,0.0) , true, false);
 		rectangle(img_, rect, Scalar(0, 0, 255), 2);
 
-//
 //		float mean_rgb[3]= {123.68, 116.779, 103.939};
 //		float std_rgb[3] = {58.393, 57.12, 57.375};
 
@@ -117,16 +116,15 @@ std::pair<std::string,float> VEHICLE_RECG::detect(cv::Mat& img_)
 
 		float scale = 1.0;
 
-        float* header = (float*)blob.data;
+        	float* header = (float*)blob.data;
 
 		int size = blob.size[2]*blob.size[3];
 
 		for(int c =  0 ; c  < 3 ;c++)
 		{
 			for(int k  = 0 ; k< size ; k++)
-            	header[c*size  +  k ]  = static_cast<float>((header[c*size  +  k ]/scale - mean_rgb[c])/std_rgb[c]);
+            			header[c*size  +  k ]  = static_cast<float>((header[c*size  +  k ]/scale - mean_rgb[c])/std_rgb[c]);
 		}
-
 
 
 		reg_net.setInput(blob);
@@ -164,16 +162,19 @@ void VEHICLE_RECG::recognize(cv::Mat& img_, cv::Rect& rect)
 	//float std_rgb[3] = {58.393, 57.12, 57.375};
 
 	float mean_rgb[3]= { 116.779, 103.939 , 123.68};
-
 	float std_rgb[3] = { 57.12, 57.375,58.393};
+
 	float scale = 1.0;
 
+        float* header = (float*)blob.data;
 
+	int size = blob.size[2]*blob.size[3];
 
-
-	blob /= 255.0;
-	blob -= 0.45;
-	blob /= 0.22;
+	for(int c =  0 ; c  < 3 ;c++)
+	{
+		for(int k  = 0 ; k< size ; k++)
+            		header[c*size  +  k ]  = static_cast<float>((header[c*size  +  k ]/scale - mean_rgb[c])/std_rgb[c]);
+	}
 
 	reg_net.setInput(blob);
 
