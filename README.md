@@ -40,3 +40,6 @@ Vehicle Type Identification which supporting for 1776 kinds of models. Part of D
 [MIT Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
 [The CompCars dataset](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html)
+
+
+##### 欢迎加我们的交流群 QQ:737677707, 备注:HyperDL
