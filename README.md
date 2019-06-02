@@ -5,17 +5,32 @@ Vehicle Type Identification which supporting for 1776 kinds of models. Part of D
 
 [Models Table](label.txt)
 
+#### 特性
+
+- 速度快，基于mobilenet设计，更适合移动端部署
+
+- 种类丰富，能够支持1776种常见车型
+
+- 准确度高，TOP1 准确率超过85%
+
+- 非常适合停车场卡口，结合车牌识别一同部署
+
 
 #### 识别测试APP
 
 - 体验 Android APP：[https://fir.im/HyperVID](https://fir.im/HyperVID)
 
+- Windows 测试程序: (链接: https://pan.baidu.com/s/1h7DNck9pFQo_rmg04IbXjw 提取码: 7h45)
 
 #### Demo Image on Android
 
 ![demo](demo.png)
 
+#### TODO
 
+- 丰富车型库
+
+- 进一步优化模型，提高速度，降低模型大小
 
 
 #### Related Dataset
@@ -25,3 +40,6 @@ Vehicle Type Identification which supporting for 1776 kinds of models. Part of D
 [MIT Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
 [The CompCars dataset](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html)
+
+
+##### 欢迎加我们的交流群 QQ:737677707, 备注:HyperDL
